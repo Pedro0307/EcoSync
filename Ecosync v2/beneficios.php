@@ -169,10 +169,7 @@ if (!isset($_SESSION['usuario'])) {
             <div class="card-content"><h3>Natura Recicla</h3></div>
         </a>
 
-        <a class="card" href="https://www.paodeacucar.com/reciclagem" target="_blank">
-            <img src="https://placehold.co/500x350/81c784/2e4d2e?text=Pão+de+Açúcar" alt="Pão de Açúcar Reciclagem">
-            <div class="card-content"><h3>Pão de Açúcar</h3></div>
-        </a>
+       
     </div>
 
     <footer>
