@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSync - Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f8fcf8; /* Fundo mais suave */
+            color: #2e4d2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Container do formulário */
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            transition: all 0.3s ease;
+        }
+        .container:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #1b5e20;
+            font-size: 2rem;
+        }
+
+        /* Campos de input */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0f2e0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            color: #2e4d2e;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            outline: none;
+        }
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #388e3c;
+            box-shadow: 0 0 0 3px rgba(56, 142, 60, 0.2);
+        }
+        input::placeholder {
+            color: #90a490;
+        }
+
+        /* Botão de cadastro */
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background: #388e3c;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        button[type="submit"]:hover {
+            background: #1b5e20;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Link para login */
+        p {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        a {
+            color: #388e3c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1b5e20;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Criar Conta</h2>
+        <form action="processa_cadastro.php" method="POST">
+            <input type="text" name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem conta? <a href="index.html">Faça login</a></p>
+    </div>
+</body>
+</html>
